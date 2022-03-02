@@ -1,0 +1,23 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c1 decimal(10,5),c2 int);";stat];
+SQL["insert into t1 values (1, 1234.5678, 1234);";stat];
+SQL["insert into t1 values (2, 12345.5678, 12345);";stat];
+SQL["insert into t1 values (3, 123.456, 123);";stat];
+SQL["insert into t1 values (4, 123.4560, 123);";stat];
+
+ResultSet rs0 = SQL["select c1 from t1;"; stat];
+ResultSet rs1 = SQL["select distinct c1 from t1 order by c1;"; stat];
+ResultSet rs2 = SQL["select c2 from t1;"; stat];
+ResultSet rs3 = SQL["select distinct c2 from t1 order by c2;"; stat];
+
+IdealResultSet<Decimal> irs0;
+IdealResultSet<Decimal> irs1;
+IdealResultSet<int> irs2;
+IdealResultSet<int> irs3;
+IMPORT_IRS["decimal_SQL2";irs0 0,irs1 1,irs2 2,irs3 3];
+VERIFY[rs0;==;irs0];
+VERIFY[rs1;==;irs1];
+VERIFY[rs2;==;irs2];
+VERIFY[rs3;==;irs3];

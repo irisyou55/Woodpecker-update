@@ -1,0 +1,12 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c1 decimal(10,5));";stat];
+PStatement pstat = GET_PSTAT[conn;"insert into t1 values(?,?)"; int, Decimal];
+SQL["insert into t1 values(1, 1111.111);";stat];
+PSQL[pstat;2,123.456];
+ResultSet rs0 = SQL["select * from t1;"; stat];
+
+IdealResultSet<int,Decimal> irs0;
+IMPORT_IRS["decimal_jdbc";irs0 0];
+VERIFY[rs0;==;irs0];

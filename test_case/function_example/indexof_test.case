@@ -1,0 +1,5 @@
+List<int> list = [4,5,6];
+int a;
+int b = 5;
+a=INDEX_OF[list;1];
+VERIFY[a;==;b];

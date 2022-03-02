@@ -1,0 +1,10 @@
+3,7:table[USERTABLE;1200000;YCSB_KEY int,C2 int,FIELD1 varchar(100),FIELD2 varchar(100),FIELD3 varchar(100),FIELD4 varchar(100),FIELD5 varchar(100),FIELD6 varchar(100),FIELD7 varchar(100),FIELD8 varchar(100),FIELD9 varchar(100),FIELD10 varchar(100);pk(YCSB_KEY)]
+4,7:import_tbl[USERTABLE]
+8,7:txn[0.8]
+9,7:select[USERTABLE;true;;zipfian(0,1199999,10,3);"*";filter(YCSB_KEY =)]
+10,7:end_txn
+12,7:txn[0.2]
+13,7:delete[USERTABLE;true;;zipfian(0,1199999,10,3);filter(YCSB_KEY =)]
+14,7:end_txn
+16,8:txn_loading[100;12000;1]
+18,7:clear_tbl[USERTABLE]

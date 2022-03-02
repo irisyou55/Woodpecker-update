@@ -1,0 +1,15 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists test1,test2;";stat];
+SQL["create table test1(c1 decimal(10,3) primary key, c2 decimal(10,3));";stat];
+SQL["insert into test1 values(1,1);";stat];
+SQL["insert into test1 values(2.0,2.0);";stat];
+SQL["select * from test1 where c1 in(1.0,3.0);";stat];
+SQL["select * from test1 where c2 in(1.0,3.0);";stat];
+SQL["select * from test1 where c1 in(1,3);";stat];
+SQL["select * from test1 where c2 in(1,3);";stat];
+SQL["update test1 set c2 = 4.0 where c1 in(1.0,3.0);";stat];
+SQL["update test1 set c2 = 4 where c1 in(1.0,3.0);";stat];
+SQL["update test1 set c2 = 4.0 where c1 in(1,3);";stat];
+SQL["delete from test1 where c1 in(1,3);";stat];
+SQL["delete from test1 where c2 in(1,3);";stat];

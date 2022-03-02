@@ -1,0 +1,12 @@
+Connection conn1 = GET_CONN[master];
+Statement stmt1 = GET_STAT[conn1];
+SQL["drop table if exists t1"; stmt1];
+SQL["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100))"; stmt1];
+SQL["insert into t1 values (1,1,'aaaa')"; stmt1];
+int iter = 100;
+int iter1;
+CAL[iter1=iter-1];
+
+VERIFY[iter;>;iter1];
+
+SLEEP[1;second];

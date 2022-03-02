@@ -1,0 +1,3 @@
+String a="123abcabc";
+String b="abc";
+CONTAIN[a;b;2];

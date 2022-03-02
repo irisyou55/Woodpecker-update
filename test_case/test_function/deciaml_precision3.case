@@ -1,0 +1,16 @@
+## one cluster case
+
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c2 decimal(38,30));";stat];
+SQL["insert into t1 values (1, 0.3);";stat];
+SQL["insert into t1 values (2, 1.3);";stat];
+SQL["insert into t1 values (3, 11.3);";stat];
+
+ResultSet rs = SQL["select * from t1;"; stat];
+
+IdealResultSet<int,Decimal> irs1;
+IMPORT_IRS["deciaml_precision3";irs1 0];
+VERIFY[rs;==;irs1];

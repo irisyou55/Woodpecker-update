@@ -1,0 +1,8 @@
+1,3:Connection conn=get_conn[master]
+2,3:Statement stat=get_stat[conn]
+5,1:sql["drop table if exists t1;";stat]
+6,1:sql["create table t1(k int primary key, c1 decimal(10,5));";stat]
+9,0:String define="CREATE PROCEDURE A() begin select * from t1; end"
+11,1:def_proc[define;stat]
+14,3:CStatement cstat=get_cstat[conn;"call A()";]
+16,3:ResultSet c=csql[cstat;1;]

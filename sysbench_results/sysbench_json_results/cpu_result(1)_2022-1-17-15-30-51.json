@@ -1,0 +1,16 @@
+{
+   "CPU speed:":
+   {
+      "events per second":"9209054.48"
+   },"Throughput:":
+   {
+      "events/s (eps)":"9209054.4772","time elapsed":"5.0006s"
+   },"Threads fairness:":
+   {
+      "events (avg/stddev)":"2302549.1000/33236.58","execution time (avg/stddev)":"1.4493/0.20"
+   },"Latency (ms):":
+   {
+      "min":"0.00","avg":"0.00","max":"172.29","sum":"28986.65","95th percentile":"0.00"
+   }
+
+}

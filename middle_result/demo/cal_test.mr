@@ -1,0 +1,10 @@
+1,3:Connection conn1=get_conn[master]
+2,3:Statement stmt1=get_stat[conn1]
+3,1:sql["drop table if exists t1";stmt1]
+4,1:sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100))";stmt1]
+5,1:sql["insert into t1 values (1,1,'aaaa')";stmt1]
+6,0:int iter=100
+7,0:int iter1
+8,1:CAL[iter1=iter-1]
+10,1:verify[iter;>;iter1]
+12,1:sleep[1;second]

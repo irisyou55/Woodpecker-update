@@ -1,0 +1,67 @@
+1,3:Connection conn=get_conn[master]
+2,3:Statement stat=get_stat[conn]
+3,1:sql["drop table if exists t1;";stat]
+4,1:sql["create table t1(k int primary key, c1 decimal(10,5), c2 int);";stat]
+5,1:sql["insert into t1 values (1, 1234.5678, 1234);";stat]
+6,1:sql["insert into t1 values (2, 12345.5678, 12345);";stat]
+7,1:sql["insert into t1 values (3, 123.456, 123);";stat]
+8,1:sql["insert into t1 values (4, 123.4560, 123);";stat]
+9,1:sql["insert into t1 values (5, 99999.4560, 123);";stat]
+11,3:ResultSet rs0=sql["select count(c1) from t1;";stat]
+12,3:ResultSet rs1=sql["select sum(c1) from t1;";stat]
+13,3:ResultSet rs2=sql["select avg(c1) from t1;";stat]
+14,3:ResultSet rs3=sql["select max(c1) from t1;";stat]
+15,3:ResultSet rs4=sql["select min(c1) from t1;";stat]
+16,3:ResultSet rs5=sql["select count(c1 + 10 * c2) from t1;";stat]
+17,3:ResultSet rs6=sql["select sum(c1 + 10 * c2) from t1;";stat]
+18,3:ResultSet rs7=sql["select avg(c1 + 10 * c2) from t1;";stat]
+19,3:ResultSet rs8=sql["select max(c1 + 10 * c2) from t1;";stat]
+20,3:ResultSet rs9=sql["select min(c1 + 10 * c2) from t1;";stat]
+22,3:ResultSet rs10=sql["select sum(c1 + 10 * c2) * 2.1 from t1;";stat]
+23,3:ResultSet rs11=sql["select avg(c1 + 10 * c2) * 2.1 from t1;";stat]
+24,3:ResultSet rs12=sql["select max(c1 + 10 * c2) * 2.1 from t1;";stat]
+25,3:ResultSet rs13=sql["select min(c1 + 10 * c2) * 2.1 from t1;";stat]
+26,3:ResultSet rs14=sql["select count(c1 *1000000000000000000000000000000000000000000000) from t1;";stat]
+27,3:ResultSet rs15=sql["select sum(c1 *1000000000000000000000000000000000000000000000) from t1;";stat]
+28,3:ResultSet rs16=sql["select avg(c1 *1000000000000000000000000000000000000000000000) from t1;";stat]
+29,3:ResultSet rs17=sql["select max(c1 *1000000000000000000000000000000000000000000000) from t1;";stat]
+30,3:ResultSet rs18=sql["select min(c1 *1000000000000000000000000000000000000000000000) from t1;";stat]
+32,0:IdealResultSet<int> irs0
+33,0:IdealResultSet<Decimal> irs1
+34,0:IdealResultSet<Decimal> irs2
+35,0:IdealResultSet<Decimal> irs3
+36,0:IdealResultSet<Decimal> irs4
+37,0:IdealResultSet<int> irs5
+38,0:IdealResultSet<Decimal> irs6
+39,0:IdealResultSet<Decimal> irs7
+40,0:IdealResultSet<Decimal> irs8
+41,0:IdealResultSet<Decimal> irs9
+42,0:IdealResultSet<Decimal> irs10
+43,0:IdealResultSet<Decimal> irs11
+44,0:IdealResultSet<Decimal> irs12
+45,0:IdealResultSet<Decimal> irs13
+46,0:IdealResultSet<int> irs14
+47,0:IdealResultSet<Decimal> irs15
+48,0:IdealResultSet<Decimal> irs16
+49,0:IdealResultSet<Decimal> irs17
+50,0:IdealResultSet<Decimal> irs18
+51,1:import_irs["decimal_aggregate function"][irs0 0,irs1 1,irs2 2,irs3 3,irs4 4,irs5 5,irs6 6,irs7 7,irs8 8,irs9 9,irs10 10,irs11 11,irs12 12,irs13 13,irs14 14,irs15 15,irs16 16,irs17 17,irs18 18]
+52,1:verify[rs0;==;irs0]
+53,1:verify[rs1;==;irs1]
+54,1:verify[rs2;==;irs2]
+55,1:verify[rs3;==;irs3]
+56,1:verify[rs4;==;irs4]
+57,1:verify[rs5;==;irs5]
+58,1:verify[rs6;==;irs6]
+59,1:verify[rs7;==;irs7]
+60,1:verify[rs8;==;irs8]
+61,1:verify[rs9;==;irs9]
+62,1:verify[rs10;==;irs10]
+63,1:verify[rs11;==;irs11]
+64,1:verify[rs12;==;irs12]
+65,1:verify[rs13;==;irs13]
+66,1:verify[rs14;==;irs14]
+67,1:verify[rs15;==;irs15]
+68,1:verify[rs16;==;irs16]
+69,1:verify[rs17;==;irs17]
+70,1:verify[rs18;==;irs18]

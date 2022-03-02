@@ -1,0 +1,4 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k decimal(10,5) primary key, c1 decimal(10,5) auto_increment);";stat;ERROR];

@@ -1,0 +1,71 @@
+1,3:Connection conn=get_conn[master]
+2,3:Statement stat=get_stat[conn]
+3,1:sql["drop table if exists t1;";stat]
+4,1:sql["create table t1(k int primary key, c1 decimal(10,5), c2 decimal(10,5), c3 int, c4 varchar(100));";stat]
+5,1:sql["insert into t1 values (1, 1234.5, 1234.4, 20, 'zhao');";stat]
+6,1:sql["insert into t1 values (2, 1234.3, 1234.2, 16, 'zhao');";stat]
+7,1:sql["insert into t1 values (3, 1234.2, 1234.6, 16, 'zhao');";stat]
+8,1:sql["insert into t1 values (4, 1234.4, 1234.3, 18, 'qian');";stat]
+9,1:sql["insert into t1 values (5, 1234.1, 1234.5, 20, 'qian');";stat]
+10,1:sql["insert into t1 values (6, 1234.6, 1234.1, 18, 'sun');";stat]
+11,3:ResultSet rs0=sql["select c2, sum(c1) from t1 group by c2;";stat]
+12,3:ResultSet rs1=sql["select c3, sum(c1) from t1 group by c3;";stat]
+13,3:ResultSet rs2=sql["select c4, sum(c1) from t1 group by c4;";stat]
+14,3:ResultSet rs3=sql["select c3, c4, sum(c1) from t1 group by c3, c4;";stat]
+15,3:ResultSet rs4=sql["select c2, avg(c1) from t1 group by c2;";stat]
+16,3:ResultSet rs5=sql["select c3, c4, avg(c1) from t1 group by c3, c4;";stat]
+17,3:ResultSet rs6=sql["select c2, count(c1) from t1 group by c2;";stat]
+18,3:ResultSet rs7=sql["select c3, c4, count(c1) from t1 group by c3, c4;";stat]
+19,3:ResultSet rs8=sql["select c2, max(c1) from t1 group by c2;";stat]
+20,3:ResultSet rs9=sql["select c3, c4, max(c1) from t1 group by c3, c4;";stat]
+21,3:ResultSet rs10=sql["select c2, min(c1) from t1 group by c2;";stat]
+22,3:ResultSet rs11=sql["select c3, c4, min(c1) from t1 group by c3, c4;";stat]
+23,3:ResultSet rs12=sql["select c2, sum(c1) from t1 group by c2 having sum(c1) >= 1234.4;";stat]
+24,3:ResultSet rs13=sql["select c2, c4, min(c1) from t1 group by c2, c4 having min(c1) <1234.3;";stat]
+25,3:ResultSet rs14=sql["select c2 ,c3, c4 from t1 order by c2;";stat]
+26,3:ResultSet rs15=sql["select c2 ,c3, c4 from t1 order by c2 DESC;";stat]
+27,3:ResultSet rs16=sql["select c2 ,c3, c4 from t1 order by c2 ASC;";stat]
+28,3:ResultSet rs17=sql["select c2 ,c3, c4 from t1 order by c3, c2;";stat]
+29,3:ResultSet rs18=sql["select c2 ,c3, c4 from t1 order by c3 DESC, c2 DESC;";stat]
+30,3:ResultSet rs19=sql["select c2 ,c3, c4 from t1 order by c3, c2 ASC;";stat]
+32,0:IdealResultSet<Decimal,Decimal> irs0
+33,0:IdealResultSet<int,Decimal> irs1
+34,0:IdealResultSet<String,Decimal> irs2
+35,0:IdealResultSet<int,String,Decimal> irs3
+36,0:IdealResultSet<Decimal,Decimal> irs4
+37,0:IdealResultSet<int,String,Decimal> irs5
+38,0:IdealResultSet<Decimal,int> irs6
+39,0:IdealResultSet<int,String,int> irs7
+40,0:IdealResultSet<Decimal,Decimal> irs8
+41,0:IdealResultSet<int,String,Decimal> irs9
+42,0:IdealResultSet<Decimal,Decimal> irs10
+43,0:IdealResultSet<int,String,Decimal> irs11
+44,0:IdealResultSet<Decimal,Decimal> irs12
+45,0:IdealResultSet<Decimal,String,Decimal> irs13
+46,0:IdealResultSet<Decimal,int,String> irs14
+47,0:IdealResultSet<Decimal,int,String> irs15
+48,0:IdealResultSet<Decimal,int,String> irs16
+49,0:IdealResultSet<Decimal,int,String> irs17
+50,0:IdealResultSet<Decimal,int,String> irs18
+51,0:IdealResultSet<Decimal,int,String> irs19
+52,1:import_irs["decimal_group by and order by"][irs0 0,irs1 1,irs2 2,irs3 3,irs4 4,irs5 5,irs6 6,irs7 7,irs8 8,irs9 9,irs10 10,irs11 11,irs12 12,irs13 13,irs14 14,irs15 15,irs16 16,irs17 17,irs18 18,irs19 19]
+53,1:verify[rs0;==;irs0]
+54,1:verify[rs1;==;irs1]
+55,1:verify[rs2;==;irs2]
+56,1:verify[rs3;==;irs3]
+57,1:verify[rs4;==;irs4]
+58,1:verify[rs5;==;irs5]
+59,1:verify[rs6;==;irs6]
+60,1:verify[rs7;==;irs7]
+61,1:verify[rs8;==;irs8]
+62,1:verify[rs9;==;irs9]
+63,1:verify[rs10;==;irs10]
+64,1:verify[rs11;==;irs11]
+65,1:verify[rs12;==;irs12]
+66,1:verify[rs13;==;irs13]
+67,1:verify[rs14;==;irs14]
+68,1:verify[rs15;==;irs15]
+69,1:verify[rs16;==;irs16]
+70,1:verify[rs17;==;irs17]
+71,1:verify[rs18;==;irs18]
+72,1:verify[rs19;==;irs19]

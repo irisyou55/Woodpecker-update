@@ -1,0 +1,59 @@
+##insert_数值类型
+##首先获取数据库连接
+Connection conn=GET_CONN[master];
+Connection conn1=GET_CONN[master];
+Connection conn2=GET_CONN[master];
+Connection conn3=GET_CONN[master];
+Connection conn4=GET_CONN[master];
+Statement stmt=GET_STAT[conn];
+Statement stmt1=GET_STAT[conn1];
+Statement stmt2=GET_STAT[conn2];
+Statement stmt3=GET_STAT[conn3];
+Statement stmt4=GET_STAT[conn4];
+
+SQL["drop table if exists t1,t2,t3,t4;"; stmt];
+SQL["create table t1(f1 int, f2 int, a int, primary key(f1,f2));"; stmt];
+SQL["insert into t1 values(1,1,1);"; stmt];
+SQL["insert into t1 values(1,2,1);"; stmt];
+SQL["insert into t1 values(2,1,1);"; stmt];
+SQL["insert into t1 values(2,2,1);"; stmt];
+TX[conn1; start];
+SQL["update t1 set a=a+1 where f1=1 and f2=1;"; stmt1];
+SQL["update t1 set a=a+1 where f1=2 and f2=1;"; stmt1];
+TX[conn2; start];
+SQL["update t1 set a=a+1 where f1=1 and f2=2;"; stmt2];
+SQL["update t1 set a=a+1 where f1=2 and f2=2;"; stmt2];
+TX[conn1; commit];
+TX[conn2; commit];
+ResultSet rs0 = SQL["select * from t1;"; stmt];
+
+TX[conn1; start];
+SQL["update t1 set a=a+1 where f1=1 and f2=1;"; stmt1];
+SQL["update t1 set a=a+1 where f1=2 and f2=2;"; stmt1];
+TX[conn3; start];
+SQL["update t1 set a=a+1 where f1=2 and f2=1;"; stmt3];
+TX[conn2; start];
+SQL["update t1 set a=a+1 where f1=1 and f2=2;"; stmt2];
+TX[conn2; rollback];
+TX[conn1; commit];
+TX[conn3; commit];
+ResultSet rs1 = SQL["select * from t1;"; stmt];
+
+TX[conn1; start];
+SQL["update t1 set a=a+1 where f1=1;"; stmt1];
+TX[conn1; rollback];
+ResultSet rs2 = SQL["select * from t1;"; stmt];
+
+##理想结果集
+
+IdealResultSet<int,int,int> irs0;
+
+IdealResultSet<int,int,int> irs1;
+
+IdealResultSet<int,int,int> irs2;
+
+IMPORT_IRS["concurrent_case4";irs0 0,irs1 1,irs2 2];
+
+VERIFY[rs0; ==; irs0];
+VERIFY[rs1; ==; irs1];
+VERIFY[rs2; ==; irs2];

@@ -1,0 +1,19 @@
+1,7:table[t1;1000;c1 int,c2 double,c3 varchar(30);pk(c1)]
+2,7:table[t2;1000;c1 int,c2 double,c3 float;pk(c1);fk(c2,t1.c1);index(c1,c2)]
+3,7:column[t1;c1;0.2;40;0;40]
+4,7:import_tbl[t1;t2]
+7,7:txn[0.2]
+9,7:select[t1;true;;unique(0,100);"c1,c2,c3";filter(c1 =,&,c2 <);append("limit 10")]
+10,7:delete[t1;false;;uniform(1,1000);filter(c1 =,&,c2 >)]
+13,7:multiple[1;10]
+14,7:select[t1;true;;unique(0,100);"c1,c2,c3";filter(c1 =,&,c2 <)]
+15,7:select[t1;true;;unique(0,100);"c1,c2,c3";filter(c1 =,&,c2 <)]
+16,7:end_multiple
+17,7:end_txn
+20,7:txn[0.3]
+21,7:select[t1;true;;unique(0,100);"c1,c2,c3"]
+22,7:end_txn
+25,7:txn[0.5]
+26,7:select[t1;true;;unique(0,100);"c1,c2,c3"]
+27,7:end_txn
+29,8:txn_loading[100;200;1]

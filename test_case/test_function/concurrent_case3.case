@@ -1,0 +1,72 @@
+##insert_数值类型
+##首先获取数据库连接
+Connection conn=GET_CONN[master];
+Connection conn1=GET_CONN[master];
+Connection conn2=GET_CONN[master];
+Connection conn3=GET_CONN[master];
+Connection conn4=GET_CONN[master];
+Statement stmt=GET_STAT[conn];
+Statement stmt1=GET_STAT[conn1];
+Statement stmt2=GET_STAT[conn2];
+Statement stmt3=GET_STAT[conn3];
+Statement stmt4=GET_STAT[conn4];
+
+SQL["drop table if exists t1,t2,t3,t4;"; stmt];
+SQL["create table t1(pk int primary key, a int);"; stmt];
+SQL["insert into t1 values(1,1);"; stmt];
+SQL["insert into t1 values(2,1);"; stmt];
+TX[conn1; start];
+SQL["update t1 set a=a+1 where pk = 1;"; stmt1];
+TX[conn2; start];
+SQL["update t1 set a=a+1 where pk = 2;"; stmt2];
+
+
+TX[conn2; rollback];
+TX[conn1; commit];
+ResultSet rs0 = SQL["select * from t1;"; stmt];
+
+SQL["drop table t1;"; stmt];
+
+SQL["create table t1(pk int primary key, c1 int, c2 int, c3 int, c4 int);"; stmt];
+SQL["insert into t1 values(1, 1, 1, -1, -1);"; stmt];
+SQL["insert into t1 values(2, 2, 2, -2, -2);"; stmt];
+SQL["insert into t1 values(3, 3, 3, -3, -3);"; stmt];
+SQL["insert into t1 values(4, 4, 4, -4, -4);"; stmt];
+SQL["insert into t1 values(5, 5, 5, -5, -5);"; stmt];
+SQL["select sum(c1+c2+c3+c4) as mysum from t1;"; stmt];
+TX[conn1; start];
+SQL["update t1 set c1=c1+1 where pk=1;"; stmt1];
+SQL["update t1 set c3=c3-1 where pk=3;"; stmt1];
+SQL["update t1 set c3=c3-1 where pk=1;"; stmt1];
+SQL["update t1 set c1=c1+1 where pk=3;"; stmt1];
+TX[conn1; commit];
+TX[conn2; start];
+SQL["update t1 set c1=c1+1 where pk=2;"; stmt2];
+SQL["update t1 set c1=c1+1 where pk=4;"; stmt2];
+SQL["update t1 set c3=c3-1 where pk=4;"; stmt2];
+SQL["update t1 set c3=c3-1 where pk=2;"; stmt2];
+TX[conn3; start];
+SQL["update t1 set c1=c1+1 where pk=5;"; stmt3];
+SQL["update t1 set c3=c3-1 where pk=5;"; stmt3];
+SQL["update t1 set c3=c3-1 where pk=1;"; stmt3];
+SQL["update t1 set c1=c1+1 where pk=1;"; stmt3];
+TX[conn4; start];
+SQL["update t1 set c3=c3-1 where pk=3;"; stmt4];
+SQL["update t1 set c1=c1+1 where pk=3;"; stmt4];
+TX[conn4; rollback];
+TX[conn2; commit];
+TX[conn3; commit];
+ResultSet rs1 = SQL["select * from t1;"; stmt];
+
+##理想结果集
+
+IdealResultSet<int,int> irs0;
+IdealResultSet<int,int,int,int,int> irs1;
+
+IMPORT_IRS["concurrent_case3";irs0 0,irs1 1];
+
+VERIFY[rs0; ==; irs0];
+
+VERIFY[rs1; ==; irs1];
+
+

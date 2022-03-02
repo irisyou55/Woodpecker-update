@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<parameters> 
+  <!-- Connection details -->  
+  <dbtype>mysql</dbtype>  
+  <driver>com.mysql.jdbc.Driver</driver>  
+  <DBUrl>jdbc:mysql://127.0.0.1:4000/ycsb</DBUrl>  
+  <username>root</username>  
+  <password></password>  
+  <isolation>TRANSACTION_REPEATABLE_READ</isolation>  
+  <uploadCode></uploadCode>  
+  <uploadUrl></uploadUrl>  
+  <!-- Scalefactor in YCSB is *1000 the number of rows in the USERTABLE-->  
+  <scalefactor>13</scalefactor>  
+  <!-- The workload -->  
+  <terminals>10</terminals>  
+  <works> 
+    <work> 
+      <time>200</time>  
+      <rate>10000</rate>  
+      <weights>50,5,15,10,10,10</weights> 
+    </work> 
+  </works>  
+  <!-- YCSB Procedures declaration -->  
+  <transactiontypes> 
+    <transactiontype> 
+      <name>ReadRecord</name> 
+    </transactiontype>  
+    <transactiontype> 
+      <name>InsertRecord</name> 
+    </transactiontype>  
+    <transactiontype> 
+      <name>ScanRecord</name> 
+    </transactiontype>  
+    <transactiontype> 
+      <name>UpdateRecord</name> 
+    </transactiontype>  
+    <transactiontype> 
+      <name>DeleteRecord</name> 
+    </transactiontype>  
+    <transactiontype> 
+      <name>ReadModifyWriteRecord</name> 
+    </transactiontype> 
+  </transactiontypes> 
+</parameters>

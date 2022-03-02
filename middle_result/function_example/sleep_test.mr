@@ -1,0 +1,5 @@
+1,0:int iter=3
+2,5:while[iter>0]{
+3,1:sleep[1;second]
+4,1:CAL[iter=iter-1]
+5,6:}

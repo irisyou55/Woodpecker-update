@@ -1,0 +1,26 @@
+1,3:Connection conn=get_conn[master]
+2,3:Statement stat=get_stat[conn]
+3,1:sql["drop table if exists t1;";stat]
+4,1:sql["create table t1(k int primary key, c2 decimal(15,5), c3 decimal(20,3));";stat]
+5,1:sql["insert into t1 values (1, 9999999999.99999, 99999999999999999.999);";stat]
+6,1:sql["update t1 set c3 = -99999999999999999.999 where k = 1;";stat]
+7,1:sql["insert into t1 values (2, -9999999999.99999, 99999999999999999.999);";stat]
+8,3:ResultSet rs0=sql["select * from t1;";stat]
+9,3:ResultSet rs1=sql["select c2+c3 from t1;";stat]
+10,3:ResultSet rs2=sql["select -c2-c3 from t1;";stat]
+11,3:ResultSet rs3=sql["select c2*c3 from t1;";stat]
+12,3:ResultSet rs4=sql["select c2/c3 from t1;";stat]
+13,3:ResultSet rs5=sql["select c3/c2 from t1;";stat]
+15,0:IdealResultSet<int,Decimal,Decimal> irs0
+16,0:IdealResultSet<Decimal> irs1
+17,0:IdealResultSet<Decimal> irs2
+18,0:IdealResultSet<Decimal> irs3
+19,0:IdealResultSet<Decimal> irs4
+20,0:IdealResultSet<Decimal> irs5
+21,1:import_irs["decimal_calculate_test"][irs0 0,irs1 1,irs2 2,irs3 3,irs4 4,irs5 5]
+22,1:verify[rs0;==;irs0]
+23,1:verify[rs1;==;irs1]
+24,1:verify[rs2;==;irs2]
+25,1:verify[rs3;==;irs3]
+26,1:verify[rs4;==;irs4]
+27,1:verify[rs5;==;irs5]

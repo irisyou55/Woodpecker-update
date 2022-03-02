@@ -1,0 +1,6 @@
+## 仅指定数据库，会运行 mysql_tests 目录下的所有测试
+## 运行前会清空并创建数据库 test
+MYSQL_TEST_FRAMEWORK["test"; 1];
+
+## 指定特殊测试用例
+MYSQL_TEST_FRAMEWORK["test"; "example"; 2];

@@ -1,0 +1,12 @@
+3,3:Connection conn=get_conn[master]
+4,3:Statement stat=get_stat[conn]
+6,1:sql["drop table if exists t1;";stat]
+7,1:sql["create table t1(k int primary key, c2 decimal(5,0));";stat]
+8,1:sql["insert into t1 values (1, 0);";stat]
+9,1:sql["insert into t1 values (2, 0.1);";stat]
+10,1:sql["insert into t1 values (3, 1.1);";stat]
+11,1:sql["insert into t1 values (4, -1);";stat]
+13,3:ResultSet rs=sql["select * from t1;";stat]
+15,0:IdealResultSet<int,Decimal> irs1
+16,1:import_irs["deciaml_precision4"][irs1 0]
+17,1:verify[rs;==;irs1]

@@ -1,0 +1,24 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+int a=0;
+
+SQL["drop table if exists test_table;";stat];
+SQL["create table test_table(c1 int primary key, c2 double, c3 varchar(20));";stat];
+SQL["insert into test_table values(1, 1.234, 'asd');";stat];
+SQL["insert into test_table values(1, 1.234, 'asd');";stat;ERROR];
+if(a==0)
+{
+   SQL["replace into test_table values(2, 2.345, 'dfg');";stat];
+}
+SQL["update test_table set c2=3.456 where c1=2";stat];
+
+ResultSet rs1 = SQL["select c1 from test_table;";stat];
+ResultSet rs2 = SQL["select c1 from test_table for update;";stat];
+
+
+IdealResultSet<int> irs1;
+IMPORT_IRS["case1.3";irs1 0];
+VERIFY[rs1;==;irs1];
+VERIFY[rs1;==;rs2];
+
+

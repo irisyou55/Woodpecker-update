@@ -1,0 +1,24 @@
+2,3:Connection conn=get_conn[master]
+3,3:Statement stat=get_stat[conn]
+6,1:sql["drop table if exists t1;";stat]
+9,1:sql["create table t1(k int primary key, c2 int);";stat]
+11,1:parall
+12,1:sql["insert into t1 values (1,1);";stat]
+13,1:sql["insert into t1 values (2,1);";stat]
+14,1:mid_parall
+15,1:sql["insert into t1 values (3,1);";stat]
+16,1:sql["insert into t1 values (4,1);";stat]
+18,1:mid_parall
+19,1:sql["insert into t1 values (5,1);";stat]
+20,1:sql["insert into t1 values (6,1);";stat]
+21,1:mid_parall
+22,1:sql["insert into t1 values (7,1);";stat]
+23,1:sql["insert into t1 values (8,1);";stat]
+24,1:mid_parall
+25,1:sql["insert into t1 values (9,1);";stat]
+26,1:sql["insert into t1 values (10,1);";stat]
+27,1:end_parall
+29,3:ResultSet rs0=sql["select * from t1;";stat]
+31,0:IdealResultSet<int,int> irs0
+33,1:import_irs["parall_test"][irs0 0]
+35,1:verify[rs0;==;irs0]

@@ -1,0 +1,17 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c2 int);";stat];
+SQL["insert into t1 values (1,1);";stat];
+
+BATCH_SQL[10;10];
+SQL["select * from t1;";stat];
+SQL["update t1 set c2 = 2 where k = 1;";stat];
+END_BATCH_SQL;
+
+ResultSet rs0 = SQL["select * from t1;";stat];
+IdealResultSet<int,int> irs0;
+IMPORT_IRS["batch_test";irs0 0];
+VERIFY[rs0;==;irs0];
+

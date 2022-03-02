@@ -1,0 +1,13 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k decimal(10,5), c1 decimal(10,5), c2 int, c3 double, c4 float, c5 bool, c6 varchar(100), c7 datetime, primary key(k, c1));";stat];
+SQL["insert into t1 values (1, 61234.56728, 12, 12.77, 12.111, True, '10a', '2017-07-04 10:00:00');";stat];
+SQL["insert into t1 values (2, 61234.56728, 12, 12.77, 12.111, False, '10.76', '2017-07-04 10:00:00');";stat];
+SQL["select * from t1 where k = 1 and c1 = 61234.5678;";stat];
+SQL["explain select * from t1 where k = 1 and c1 = 61234.5678;";stat];
+SQL["select * from t1 where c2 = 12;";stat];
+SQL["explain select * from t1 where c2 = 12;";stat];
+SQL["select * from t1 where k = 1.0;";stat];
+SQL["explain select * from t1 where k = 1;";stat];
+

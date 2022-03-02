@@ -1,0 +1,24 @@
+Connection conn = GET_CONN[master];
+Statement stmt = GET_STAT[conn];
+PStatement pstmt1 = GET_PSTAT[conn; "update t1 set c3 = ? where c1 = ?"; String, int];
+PStatement pstmt2 = GET_PSTAT[conn; "insert into t1 values (?, ?, ?)"; int, Decimal, String];
+
+SQL["drop table if exists t1"; stmt];
+SQL["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100))"; stmt];
+SQL["insert into t1 values (1, 1.1, 'aaaaa'), (2, 2.2, 'bbbbb')"; stmt];
+PSQL[pstmt1; "ccccc", 1];
+PSQL[pstmt1; "ddddd", 2];
+
+##Decimal var = SQL["select sum(c2) from t1"; stmt];
+##PSQL[pstmt2; 2; 3, var, "eeeee"];
+Decimal var = 3.3;
+PSQL[pstmt2; 3, var, "eeeee"];
+
+ResultSet rs0 = SQL["select * from t1"; stmt];
+IdealResultSet<int,Decimal,String> irs0;
+
+IMPORT_IRS["case1"; irs0 0];
+VERIFY[rs0;==;irs0];
+
+SQL["drop table if exists t1"; stmt];
+

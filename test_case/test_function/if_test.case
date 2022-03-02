@@ -1,0 +1,12 @@
+int a = 0;
+int result = 1;
+int result1;
+if (a>0)
+{
+    CAL[result1=result-1];
+}
+else
+{
+    CAL[result1=result];
+}
+VERIFY[result1;==;result];

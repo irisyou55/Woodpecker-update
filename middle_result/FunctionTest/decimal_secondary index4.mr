@@ -1,0 +1,62 @@
+1,3:Connection conn=get_conn[master]
+2,3:Statement stat=get_stat[conn]
+3,1:sql["drop table if exists t1;";stat]
+4,1:sql["create table t1(k int primary key, c2 decimal(15,5), c3 decimal(10,3));";stat]
+5,1:sql["create index c2_c3_index on t1(c2,c3);";stat]
+6,1:sql["insert into t1 values (1, 9999999999.99999, 9999999.999);";stat]
+7,1:sql["insert into t1 values (2, -9999999999.99999, 9999999.999);";stat]
+8,1:sql["insert into t1 values (3, -9999999999.99999, -9999999.999);";stat]
+9,1:sql["replace into t1 values (4, -1111111111.99999, 9999999.999);";stat]
+10,3:ResultSet rs0=sql["select * from t1;";stat]
+11,3:ResultSet rs1=sql["select c2+c3 from t1;";stat]
+12,3:ResultSet rs2=sql["select -c2-c3 from t1;";stat]
+13,3:ResultSet rs3=sql["select c2*c3 from t1;";stat]
+14,3:ResultSet rs4=sql["select -c2*c3 from t1;";stat]
+15,3:ResultSet rs5=sql["select c2*-c3 from t1;";stat]
+16,3:ResultSet rs6=sql["select -c2*-c3 from t1;";stat]
+17,3:ResultSet rs7=sql["select c2/c3 from t1;";stat]
+18,3:ResultSet rs8=sql["select c3/c2 from t1;";stat]
+19,0:IdealResultSet<int,Decimal,Decimal> irs0
+20,0:IdealResultSet<Decimal> irs1
+21,0:IdealResultSet<Decimal> irs2
+22,0:IdealResultSet<Decimal> irs3
+23,0:IdealResultSet<Decimal> irs4
+24,0:IdealResultSet<Decimal> irs5
+25,0:IdealResultSet<Decimal> irs6
+26,0:IdealResultSet<Decimal> irs7
+27,0:IdealResultSet<Decimal> irs8
+28,1:import_irs["decimal_calculate1"][irs0 0,irs1 1,irs2 2,irs3 3,irs4 4,irs5 5,irs6 6,irs7 7,irs8 8]
+29,1:verify[rs0;==;irs0]
+30,1:verify[rs1;==;irs1]
+31,1:verify[rs2;==;irs2]
+32,1:verify[rs3;==;irs3]
+33,1:verify[rs4;==;irs4]
+34,1:verify[rs5;==;irs5]
+35,1:verify[rs6;==;irs6]
+36,1:verify[rs7;==;irs7]
+37,1:verify[rs8;==;irs8]
+41,1:sql["drop table if exists t1;";stat]
+42,1:sql["create table t1(k int primary key, c2 decimal(15,5), c3 decimal(20,3));";stat]
+43,1:sql["create index c2_index on t1(c2);";stat]
+44,1:sql["insert into t1 values (1, 9999999999.99999, 99999999999999999.999);";stat]
+45,1:sql["update t1 set c3 = -99999999999999999.999 where k = 1;";stat]
+46,1:sql["insert into t1 values (2, -9999999999.99999, 99999999999999999.999);";stat]
+47,3:ResultSet rs0=sql["select * from t1;";stat]
+48,3:ResultSet rs1=sql["select c2+c3 from t1;";stat]
+49,3:ResultSet rs2=sql["select -c2-c3 from t1;";stat]
+50,3:ResultSet rs3=sql["select c2*c3 from t1;";stat]
+51,3:ResultSet rs4=sql["select c2/c3 from t1;";stat]
+52,3:ResultSet rs5=sql["select c3/c2 from t1;";stat]
+53,0:IdealResultSet<int,Decimal,Decimal> irs0
+54,0:IdealResultSet<Decimal> irs1
+55,0:IdealResultSet<Decimal> irs2
+56,0:IdealResultSet<Decimal> irs3
+57,0:IdealResultSet<Decimal> irs4
+58,0:IdealResultSet<Decimal> irs5
+59,1:import_irs["decimal_calculate2"][irs0 0,irs1 1,irs2 2,irs3 3,irs4 4,irs5 5]
+60,1:verify[rs0;==;irs0]
+61,1:verify[rs1;==;irs1]
+62,1:verify[rs2;==;irs2]
+63,1:verify[rs3;==;irs3]
+64,1:verify[rs4;==;irs4]
+65,1:verify[rs5;==;irs5]

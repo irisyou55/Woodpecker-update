@@ -1,0 +1,42 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c2 decimal(38,0));";stat];
+SQL["create index c1_index on t1(c2);";stat];
+SQL["insert into t1 values (1, 100.1);";stat];
+ResultSet rs = SQL["select * from t1;"; stat];
+IdealResultSet<int,Decimal> irs1;
+IMPORT_IRS["deciaml_precision2";irs1 0];
+VERIFY[rs;==;irs1;set_type];
+
+
+
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c2 decimal(5,0));";stat];
+SQL["create index c2_index on t1(c2);";stat];
+SQL["insert into t1 values (1, 0);";stat];
+SQL["insert into t1 values (2, 0.1);";stat];
+SQL["insert into t1 values (3, 1.1);";stat];
+SQL["insert into t1 values (4, -1);";stat];
+ResultSet rs = SQL["select * from t1;"; stat];
+IdealResultSet<int,Decimal> irs1;
+IMPORT_IRS["deciaml_precision4";irs1 0];
+VERIFY[rs;==;irs1;set_type];
+
+
+
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c2 decimal(38,0));";stat];
+SQL["create index c2_index on t1(c2);";stat];
+SQL["insert into t1 values (1, 999999999999999999999999999999999999999);";stat;ERROR];
+SQL["insert into t1 values (2, 99999999999999999999999999999999999999);";stat];
+SQL["insert into t1 values (3, 99999999999999999999999999999999999999.0);";stat];
+SQL["insert into t1 values (4, 999999999999999999999999999999999999991.0);";stat;ERROR];
+SQL["insert into t1 values (5, 99999999999999999999999999999999999999.11);";stat];
+SQL["insert into t1 values (6, -99999999999999999999999999999999999999.11);";stat];
+SQL["insert into t1 values (7, -199999999999999999999999999999999999999.11);";stat;ERROR];
+SQL["insert into t1 values (9, -19999999999999999999999999999999999999.0000000000000001);";stat];
+ResultSet rs = SQL["select * from t1;"; stat];
+IdealResultSet<int,Decimal> irs1;
+IMPORT_IRS["decimal_insert1";irs1 0];
+VERIFY[rs;==;irs1;set_type];

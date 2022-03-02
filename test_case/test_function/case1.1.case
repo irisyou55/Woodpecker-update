@@ -1,0 +1,199 @@
+
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists test;";stat];
+SQL["create table test(id int primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id int AUTO_INCREMENT primary key, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id bigint primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id integer primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id mediumint primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id smallint primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id tinyint primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id float primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id double primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id real primary key AUTO_INCREMENT, col1 int);";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id char primary key AUTO_INCREMENT, col1 int);";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id varchar primary key AUTO_INCREMENT, col1 int);";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id INT  AUTO_INCREMENT, col1 double,col2 float,PRIMARY KEY(id,col1));";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id INT , col1 double AUTO_INCREMENT,col2 float,PRIMARY KEY(id,col1));";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id INT  AUTO_INCREMENT, col1 varchar,col2 float,PRIMARY KEY(id,col1));";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["CREATE TABLE test (id INT  AUTO_INCREMENT, col1 double AUTO_INCREMENT, col2 float,PRIMARY KEY(id,col1));";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test (id varchar  AUTO_INCREMENT, col1 int,PRIMARY KEY(id));";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test (id INT  AUTO_INCREMENT, col1 int,PRIMARY  KEY(id));";stat];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test (id INT PRIMARY KEY , col1 int AUTO_INCREMENT);";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["create table  test (id INT  , col1 int AUTO_INCREMENT,PRIMARY KEY(id));";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test (id INT AUTO_INCREMENT , col1 int AUTO_INCREMENT,PRIMARY KEY(id));";stat;ERROR];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test (id INT PRIMARY KEY AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(55);";stat];
+ResultSet rs0 = SQL["select id from test where col1=55;";stat];
+IdealResultSet<int> irs0;
+IMPORT_IRS["autoIncrement_case0";irs0 0];
+VERIFY[rs0;==;irs0];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id bigint primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs1 = SQL["select id from test;";stat];
+IdealResultSet<int> irs1;
+IMPORT_IRS["autoIncrement_case1";irs1 0];
+VERIFY[rs1;==;irs1];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id integer primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs2 = SQL["select id from test;";stat];
+IdealResultSet<int> irs2;
+IMPORT_IRS["autoIncrement_case1";irs2 0];
+VERIFY[rs2;==;irs2];
+
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id mediumint primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs3 = SQL["select id from test;";stat];
+IdealResultSet<int> irs3;
+IMPORT_IRS["autoIncrement_case1";irs3 0];
+VERIFY[rs3;==;irs3];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id smallint primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs4 = SQL["select id from test;";stat];
+IdealResultSet<int> irs4;
+IMPORT_IRS["autoIncrement_case1";irs4 0];
+VERIFY[rs4;==;irs4];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id tinyint primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs5 = SQL["select id from test;";stat];
+IdealResultSet<int> irs5;
+IMPORT_IRS["autoIncrement_case1";irs5 0];
+VERIFY[rs5;==;irs5];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id float primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs6 = SQL["select id from test;";stat];
+IdealResultSet<float> irs6;
+IMPORT_IRS["autoIncrement_case6";irs6 0];
+##VERIFY[rs6;==;irs6];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id double primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs7 = SQL["select id from test;";stat];
+IdealResultSet<double> irs7;
+IMPORT_IRS["autoIncrement_case6";irs7 0];
+##VERIFY[rs7;==;irs7];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id real primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs8 = SQL["select id from test;";stat];
+IdealResultSet<float> irs8;
+IMPORT_IRS["autoIncrement_case6";irs8 0];
+##VERIFY[rs8;==;irs8];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id int primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(id,col1) values(0,11);";stat];
+ResultSet rs9 = SQL["select id from test;";stat];
+IdealResultSet<int> irs9;
+IMPORT_IRS["autoIncrement_case9";irs9 0];
+VERIFY[rs9;==;irs9];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id int primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(id,col1) values(-11,1);";stat];
+SQL["replace into test(col1) values(2);";stat];
+SQL["replace into test(col1) values(3);";stat];
+ResultSet rs10 = SQL["select id from test;";stat];
+IdealResultSet<int> irs10;
+IMPORT_IRS["autoIncrement_case10";irs10 0];
+VERIFY[rs10;==;irs10];
+
+
+
+
+
+
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id int primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(col1) values(2);";stat];
+SQL["replace into test(col1) values(3);";stat];
+SQL["replace into test(id,col1) values(11,11);";stat];
+SQL["replace into test(col1) values(100);";stat];
+ResultSet rs15 = SQL["select id from test;";stat];
+IdealResultSet<int> irs15;
+IMPORT_IRS["autoIncrement_case15";irs15 0];
+VERIFY[rs15;==;irs15];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id int primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(id,col1) values(-21474836,11);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs16 = SQL["select id from test;";stat];
+IdealResultSet<int> irs16;
+IMPORT_IRS["autoIncrement_case16";irs16 0];
+VERIFY[rs16;==;irs16];
+
+SQL["drop table if exists test;";stat];
+SQL["create table test(id int primary key AUTO_INCREMENT, col1 int);";stat];
+SQL["replace into test(id,col1) values(21474836,11);";stat];
+SQL["replace into test(col1) values(2);";stat];
+ResultSet rs17 = SQL["select id from test;";stat];
+IdealResultSet<int> irs17;
+IMPORT_IRS["autoIncrement_case17";irs17 0];
+VERIFY[rs17;==;irs17];

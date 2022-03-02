@@ -1,0 +1,634 @@
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->main:551                          -------------Woodpecker开始运行-------------
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               构建CommandLine成功
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:211              初始化Woodpecker的系统参数
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database = mysql
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_environment_config_path = "./config/"
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_case_path = "./test_case/"
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: ideal_result_set_path = "./ideal_result_set"
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database_instance_path = "./database_instance/"
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: report_path = "./case_reports"
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:262             初始化工作流程参数(重试次数(retry_count),测试Group(case_group_name)等)
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: retry_count = 0
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: round = 1
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: default_or_not = false
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: case_group_name = test
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:354             execute case group: [test]
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:132                         开始自动执行1遍
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneMidResultDirectory:83                   Generate middle result directory: ./middle_result/
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_benchmarksql
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_tpch
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//function_example
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//batch_test
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_mysqltestframework
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sysbench
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_touchstone
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_oltpbench
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_parall
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//fault_injection
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//monitor_test
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sql
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//report_test
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_function
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:147                         本次测试的数据库是MySQL
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->initialize:70                     Initialize MySQL parameters
+2022-03-03 13:01:05 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:151                         执行第1遍
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->main:551                          -------------Woodpecker开始运行-------------
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               构建CommandLine成功
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:211              初始化Woodpecker的系统参数
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database = mysql
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_environment_config_path = "./config/"
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_case_path = "./test_case/"
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: ideal_result_set_path = "./ideal_result_set"
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database_instance_path = "./database_instance/"
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: report_path = "./case_reports"
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:262             初始化工作流程参数(重试次数(retry_count),测试Group(case_group_name)等)
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: retry_count = 0
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: round = 1
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: default_or_not = false
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: case_group_name = test_sql
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:354             execute case group: [test_sql]
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:132                         开始自动执行1遍
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneMidResultDirectory:83                   Generate middle result directory: ./middle_result/
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_benchmarksql
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_tpch
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//function_example
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//batch_test
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_mysqltestframework
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sysbench
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_touchstone
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_oltpbench
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_parall
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//fault_injection
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//monitor_test
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sql
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//report_test
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_function
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:147                         本次测试的数据库是MySQL
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->initialize:70                     Initialize MySQL parameters
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:151                         执行第1遍
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:141                         {测试Case ID: test_sql/sql_test.case}
+
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:142                         开始将sql_test.case解析成中间结果形式
+2022-03-03 13:02:06 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:46                                    Start to parse sql_test.case
+2022-03-03 13:02:07 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:62                                    Parse sql_test.case successfully
+2022-03-03 13:02:07 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:158                         解析器的值如下：
+2022-03-03 13:02:07 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:159                         {rs=null, a=3, conn1=null, stmt1=null, pstmt1=null, rs1=null, pstmt2=null}
+2022-03-03 13:02:07 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:160                         {rs=ResultSet, a=int, conn1=Connection, stmt1=Statement, pstmt1=PStatement, rs1=int, pstmt2=PStatement}
+2022-03-03 13:02:07 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:134                               开始执行测试Case对应的中间结果 sql_test.mr
+2022-03-03 13:02:07 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:02:07 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:62                      没有Woodpecker数据库，开始建立Woodpecker库
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第0行，内容是：3,3:Connection conn1=get_conn[master]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter的类名：edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handle:45                 GET_CONN: Connection conn1=get_conn[master]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handleThirdGrammar:88     把测试Case变量名称conn1和得到的真实数据库连接引用放入varValueMap
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第1行，内容是：4,3:Statement stmt1=get_stat[conn1]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.StatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.StatementGetter
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handle:46                  GET_STAT: Statement stmt1=get_stat[conn1]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handleThirdGrammar:91      把测试Case变量名称stmt1和得到的真实数据库Statement引用放入varValueMap
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第2行，内容是：5,3:PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第3行，内容是：6,3:PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第4行，内容是：9,1:sql["drop table if exists t1";stmt1]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["drop table if exists t1";stmt1]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是drop table if exists t1;
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第5行，内容是：10,1:sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean);
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第6行，内容是：11,1:sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false);
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第7行，内容是：13,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第8行，内容是：15,3:ResultSet rs=psql[pstmt2]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: ResultSet rs=psql[pstmt2]
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->dealDiffType:511              变量rs的类型:ResultSet
+2022-03-03 13:02:08 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第9行，内容是：16,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->pstmtExecuteUpdate:303                expected exception in prepared statement update: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第10行，内容是：18,3:int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handleThirdGrammar:259        SQL语句为：select c1 from t1 where c1=2;
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第11行，内容是：19,0:int a=3
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:333                       0级文法
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->variableStatement:409                     int a=3
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第12行，内容是：21,1:verify[rs1;<;a]
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:30                  VERIFY: verify[rs1;<;a]
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:34                  Vertify 为1级文法
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:98           rs1 verify a
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:155          Verify true
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:160                               sql_test.mr测试Case处理完毕
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:186                               关闭在sql_test.case中创建的所有数据库连接
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:202                         sql_test.case execute successfully first time
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:217                         执行了1个Case，本次测试没有错误，Woodpecker停止运行
+2022-03-03 13:02:09 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->main:551                          -------------Woodpecker开始运行-------------
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               构建CommandLine成功
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:211              初始化Woodpecker的系统参数
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database = mysql
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_environment_config_path = "./config/"
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_case_path = "./test_case/"
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: ideal_result_set_path = "./ideal_result_set"
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database_instance_path = "./database_instance/"
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: report_path = "./case_reports"
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:262             初始化工作流程参数(重试次数(retry_count),测试Group(case_group_name)等)
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: retry_count = 0
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: round = 1
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: default_or_not = false
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: case_group_name = test_sql
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:354             execute case group: [test_sql]
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:132                         开始自动执行1遍
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneMidResultDirectory:83                   Generate middle result directory: ./middle_result/
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_benchmarksql
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_tpch
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//function_example
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//batch_test
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_mysqltestframework
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sysbench
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_touchstone
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_oltpbench
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_parall
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//fault_injection
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//monitor_test
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sql
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//report_test
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_function
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:147                         本次测试的数据库是MySQL
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->initialize:70                     Initialize MySQL parameters
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:151                         执行第1遍
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:141                         {测试Case ID: test_sql/sql_test.case}
+
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:142                         开始将sql_test.case解析成中间结果形式
+2022-03-03 13:03:26 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:46                                    Start to parse sql_test.case
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:62                                    Parse sql_test.case successfully
+2022-03-03 13:03:27 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:158                         解析器的值如下：
+2022-03-03 13:03:27 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:159                         {rs=null, a=3, conn1=null, stmt1=null, pstmt1=null, rs1=null, pstmt2=null}
+2022-03-03 13:03:27 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:160                         {rs=ResultSet, a=int, conn1=Connection, stmt1=Statement, pstmt1=PStatement, rs1=int, pstmt2=PStatement}
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:134                               开始执行测试Case对应的中间结果 sql_test.mr
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第0行，内容是：3,3:Connection conn1=get_conn[master]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter的类名：edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handle:45                 GET_CONN: Connection conn1=get_conn[master]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handleThirdGrammar:88     把测试Case变量名称conn1和得到的真实数据库连接引用放入varValueMap
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第1行，内容是：4,3:Statement stmt1=get_stat[conn1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.StatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.StatementGetter
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handle:46                  GET_STAT: Statement stmt1=get_stat[conn1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handleThirdGrammar:91      把测试Case变量名称stmt1和得到的真实数据库Statement引用放入varValueMap
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第2行，内容是：5,3:PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第3行，内容是：6,3:PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第4行，内容是：9,1:sql["drop table if exists t1";stmt1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["drop table if exists t1";stmt1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是drop table if exists t1;
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第5行，内容是：10,1:sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean);
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第6行，内容是：11,1:sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false);
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第7行，内容是：13,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第8行，内容是：15,3:ResultSet rs=psql[pstmt2]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: ResultSet rs=psql[pstmt2]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->dealDiffType:511              变量rs的类型:ResultSet
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第9行，内容是：16,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->pstmtExecuteUpdate:303                expected exception in prepared statement update: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第10行，内容是：18,3:int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handleThirdGrammar:259        SQL语句为：select c1 from t1 where c1=2;
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第11行，内容是：19,0:int a=3
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:333                       0级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->variableStatement:409                     int a=3
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第12行，内容是：21,1:verify[rs1;<;a]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:30                  VERIFY: verify[rs1;<;a]
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:34                  Vertify 为1级文法
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:98           rs1 verify a
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:155          Verify true
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:160                               sql_test.mr测试Case处理完毕
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:186                               关闭在sql_test.case中创建的所有数据库连接
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:202                         sql_test.case execute successfully first time
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:217                         执行了1个Case，本次测试没有错误，Woodpecker停止运行
+2022-03-03 13:03:27 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->main:551                          -------------Woodpecker开始运行-------------
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               构建CommandLine成功
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:211              初始化Woodpecker的系统参数
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database = mysql
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_environment_config_path = "./config/"
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_case_path = "./test_case/"
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: ideal_result_set_path = "./ideal_result_set"
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database_instance_path = "./database_instance/"
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: report_path = "./case_reports"
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:262             初始化工作流程参数(重试次数(retry_count),测试Group(case_group_name)等)
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: retry_count = 0
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: round = 1
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: default_or_not = false
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: case_group_name = test_sql
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:354             execute case group: [test_sql]
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:132                         开始自动执行1遍
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneMidResultDirectory:83                   Generate middle result directory: ./middle_result/
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_benchmarksql
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_tpch
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//function_example
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//batch_test
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_mysqltestframework
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sysbench
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_touchstone
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_oltpbench
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_parall
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//fault_injection
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//monitor_test
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sql
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//report_test
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_function
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:147                         本次测试的数据库是MySQL
+2022-03-03 13:04:48 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->initialize:70                     Initialize MySQL parameters
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:151                         执行第1遍
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:141                         {测试Case ID: test_sql/sql_test.case}
+
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:142                         开始将sql_test.case解析成中间结果形式
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:46                                    Start to parse sql_test.case
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:62                                    Parse sql_test.case successfully
+2022-03-03 13:04:49 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:158                         解析器的值如下：
+2022-03-03 13:04:49 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:159                         {rs=null, a=3, conn1=null, stmt1=null, pstmt1=null, rs1=null, pstmt2=null}
+2022-03-03 13:04:49 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:160                         {rs=ResultSet, a=int, conn1=Connection, stmt1=Statement, pstmt1=PStatement, rs1=int, pstmt2=PStatement}
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:134                               开始执行测试Case对应的中间结果 sql_test.mr
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第0行，内容是：3,3:Connection conn1=get_conn[master]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter的类名：edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handle:45                 GET_CONN: Connection conn1=get_conn[master]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handleThirdGrammar:88     把测试Case变量名称conn1和得到的真实数据库连接引用放入varValueMap
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第1行，内容是：4,3:Statement stmt1=get_stat[conn1]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.StatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.StatementGetter
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handle:46                  GET_STAT: Statement stmt1=get_stat[conn1]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handleThirdGrammar:91      把测试Case变量名称stmt1和得到的真实数据库Statement引用放入varValueMap
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第2行，内容是：5,3:PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第3行，内容是：6,3:PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第4行，内容是：9,1:sql["drop table if exists t1";stmt1]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["drop table if exists t1";stmt1]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是drop table if exists t1;
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第5行，内容是：10,1:sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean);
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第6行，内容是：11,1:sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false);
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第7行，内容是：13,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:04:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第8行，内容是：15,3:ResultSet rs=psql[pstmt2]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: ResultSet rs=psql[pstmt2]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->dealDiffType:511              变量rs的类型:ResultSet
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第9行，内容是：16,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->pstmtExecuteUpdate:303                expected exception in prepared statement update: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第10行，内容是：18,3:int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handleThirdGrammar:259        SQL语句为：select c1 from t1 where c1=2;
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第11行，内容是：19,0:int a=3
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:333                       0级文法
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->variableStatement:409                     int a=3
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第12行，内容是：21,1:verify[rs1;<;a]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:30                  VERIFY: verify[rs1;<;a]
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:34                  Vertify 为1级文法
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:98           rs1 verify a
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:155          Verify true
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:160                               sql_test.mr测试Case处理完毕
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:186                               关闭在sql_test.case中创建的所有数据库连接
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:202                         sql_test.case execute successfully first time
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:217                         执行了1个Case，本次测试没有错误，Woodpecker停止运行
+2022-03-03 13:04:50 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->main:551                          -------------Woodpecker开始运行-------------
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               构建CommandLine成功
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:211              初始化Woodpecker的系统参数
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database = mysql
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_environment_config_path = "./config/"
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_case_path = "./test_case/"
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: ideal_result_set_path = "./ideal_result_set"
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database_instance_path = "./database_instance/"
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: report_path = "./case_reports"
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:262             初始化工作流程参数(重试次数(retry_count),测试Group(case_group_name)等)
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: retry_count = 0
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: round = 1
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: default_or_not = false
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: case_group_name = test_sql
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:354             execute case group: [test_sql]
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:132                         开始自动执行1遍
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneMidResultDirectory:83                   Generate middle result directory: ./middle_result/
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_benchmarksql
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_tpch
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//function_example
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//batch_test
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_mysqltestframework
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sysbench
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_touchstone
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_oltpbench
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_parall
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//fault_injection
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//monitor_test
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sql
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//report_test
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_function
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:147                         本次测试的数据库是MySQL
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->initialize:70                     Initialize MySQL parameters
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:151                         执行第1遍
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:141                         {测试Case ID: test_sql/sql_test.case}
+
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:142                         开始将sql_test.case解析成中间结果形式
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:46                                    Start to parse sql_test.case
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:62                                    Parse sql_test.case successfully
+2022-03-03 13:06:47 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:158                         解析器的值如下：
+2022-03-03 13:06:47 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:159                         {rs=null, a=3, conn1=null, stmt1=null, pstmt1=null, rs1=null, pstmt2=null}
+2022-03-03 13:06:47 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:160                         {rs=ResultSet, a=int, conn1=Connection, stmt1=Statement, pstmt1=PStatement, rs1=int, pstmt2=PStatement}
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:134                               开始执行测试Case对应的中间结果 sql_test.mr
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:06:47 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第0行，内容是：3,3:Connection conn1=get_conn[master]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter的类名：edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handle:45                 GET_CONN: Connection conn1=get_conn[master]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handleThirdGrammar:88     把测试Case变量名称conn1和得到的真实数据库连接引用放入varValueMap
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第1行，内容是：4,3:Statement stmt1=get_stat[conn1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.StatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.StatementGetter
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handle:46                  GET_STAT: Statement stmt1=get_stat[conn1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handleThirdGrammar:91      把测试Case变量名称stmt1和得到的真实数据库Statement引用放入varValueMap
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第2行，内容是：5,3:PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第3行，内容是：6,3:PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第4行，内容是：9,1:sql["drop table if exists t1";stmt1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["drop table if exists t1";stmt1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是drop table if exists t1;
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第5行，内容是：10,1:sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean);
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第6行，内容是：11,1:sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false);
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第7行，内容是：13,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第8行，内容是：15,3:ResultSet rs=psql[pstmt2]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: ResultSet rs=psql[pstmt2]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->dealDiffType:511              变量rs的类型:ResultSet
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第9行，内容是：16,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->pstmtExecuteUpdate:303                expected exception in prepared statement update: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第10行，内容是：18,3:int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handleThirdGrammar:259        SQL语句为：select c1 from t1 where c1=2;
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第11行，内容是：19,0:int a=3
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:333                       0级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->variableStatement:409                     int a=3
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第12行，内容是：21,1:verify[rs1;<;a]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:30                  VERIFY: verify[rs1;<;a]
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:34                  Vertify 为1级文法
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:98           rs1 verify a
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:155          Verify true
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:160                               sql_test.mr测试Case处理完毕
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:186                               关闭在sql_test.case中创建的所有数据库连接
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:202                         sql_test.case execute successfully first time
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:217                         执行了1个Case，本次测试没有错误，Woodpecker停止运行
+2022-03-03 13:06:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->main:551                          -------------Woodpecker开始运行-------------
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               构建CommandLine成功
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:211              初始化Woodpecker的系统参数
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database = mysql
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_environment_config_path = "./config/"
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: test_case_path = "./test_case/"
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: ideal_result_set_path = "./ideal_result_set"
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: database_instance_path = "./database_instance/"
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initSysParameter:223              初始化系统参数: report_path = "./case_reports"
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:262             初始化工作流程参数(重试次数(retry_count),测试Group(case_group_name)等)
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: retry_count = 0
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: round = 1
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: default_or_not = false
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:283             初始化测试流程参数: case_group_name = test_sql
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->initFlowParameter:354             execute case group: [test_sql]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:132                         开始自动执行1遍
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneMidResultDirectory:83                   Generate middle result directory: ./middle_result/
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_benchmarksql
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_tpch
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//function_example
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//batch_test
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_mysqltestframework
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sysbench
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_touchstone
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_oltpbench
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_parall
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//fault_injection
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//monitor_test
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_sql
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//report_test
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->geneDirectory:115                           generate directory: ./middle_result//test_function
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:147                         本次测试的数据库是MySQL
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->initialize:70                     Initialize MySQL parameters
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.TestController->start:151                         执行第1遍
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:141                         {测试Case ID: test_sql/sql_test.case}
+
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:142                         开始将sql_test.case解析成中间结果形式
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:46                                    Start to parse sql_test.case
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Parser->parse:62                                    Parse sql_test.case successfully
+2022-03-03 13:07:48 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:158                         解析器的值如下：
+2022-03-03 13:07:48 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:159                         {rs=null, a=3, conn1=null, stmt1=null, pstmt1=null, rs1=null, pstmt2=null}
+2022-03-03 13:07:48 [DEBUG] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:160                         {rs=ResultSet, a=int, conn1=Connection, stmt1=Statement, pstmt1=PStatement, rs1=int, pstmt2=PStatement}
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:134                               开始执行测试Case对应的中间结果 sql_test.mr
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第0行，内容是：3,3:Connection conn1=get_conn[master]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter的类名：edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handle:45                 GET_CONN: Connection conn1=get_conn[master]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.ConnectionGetter->handleThirdGrammar:88     把测试Case变量名称conn1和得到的真实数据库连接引用放入varValueMap
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:47                      准备连接数据库，类型mysql
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->getConnection:56                      数据库连接jdbc:mysql://127.0.0.1:3306/Woodpecker用户名root
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第1行，内容是：4,3:Statement stmt1=get_stat[conn1]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.StatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.StatementGetter
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handle:46                  GET_STAT: Statement stmt1=get_stat[conn1]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.StatementGetter->handleThirdGrammar:91      把测试Case变量名称stmt1和得到的真实数据库Statement引用放入varValueMap
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第2行，内容是：5,3:PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt1=get_pstat[conn1;"insert into t1 values(?,?,?,?,?,?)";int,Decimal,String,float,double,boolean]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第3行，内容是：6,3:PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedStatementGetter->handle:39          GET_PSTAT: PStatement pstmt2=get_pstat[conn1;"select * from t1";]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第4行，内容是：9,1:sql["drop table if exists t1";stmt1]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["drop table if exists t1";stmt1]
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是drop table if exists t1;
+2022-03-03 13:07:48 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第5行，内容是：10,1:sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean)";stmt1]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是create table t1 (c1 int primary key, c2 decimal(4,2), c3 varchar(100), c4 float, c5 double, c6 boolean);
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第6行，内容是：11,1:sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: sql["insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false)";stmt1]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:65                     准备执行的SQL语句是insert into t1 values (2, 10, 'bbbbb', 2.0, 2.0, false), (3, 10, 'ccccc', 3.0, 3.0, false);
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第7行，内容是：13,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第8行，内容是：15,3:ResultSet rs=psql[pstmt2]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: ResultSet rs=psql[pstmt2]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->dealDiffType:511              变量rs的类型:ResultSet
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第9行，内容是：16,1:psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.PreparedSQLProcessor->handle:29             PSQL: psql[pstmt1;1,10,"aaaaa",1.0,1.0,true;ERROR]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.sql.BasicSQLOperation->pstmtExecuteUpdate:303                expected exception in prepared statement update: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第10行，内容是：18,3:int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:354                       3级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->declareFunctionStatement:557              执行edu.ecnu.Woodpecker.executor.keyword.SQLProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.SQLProcessor
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handle:32                     SQL: int rs1=sql["select c1 from t1 where c1=2";stmt1]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->handleThirdGrammar:259        SQL语句为：select c1 from t1 where c1=2;
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.SQLProcessor->executeSQL:432                statement名称是：stmt1
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第11行，内容是：19,0:int a=3
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:333                       0级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->variableStatement:409                     int a=3
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:329                       准备执行中间结果集的第12行，内容是：21,1:verify[rs1;<;a]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->assignStatement:340                       1级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->functionStatement:485                     执行edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor的类名：edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:30                  VERIFY: verify[rs1;<;a]
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->handle:34                  Vertify 为1级文法
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:98           rs1 verify a
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.keyword.VerifyProcessor->executeVerify:155          Verify true
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:160                               sql_test.mr测试Case处理完毕
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.executor.Executor->execute:186                               关闭在sql_test.case中创建的所有数据库连接
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:202                         sql_test.case execute successfully first time
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.controller.MySQLOperation->enter:217                         执行了1个Case，本次测试没有错误，Woodpecker停止运行
+2022-03-03 13:07:49 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:24:21 [INFO ] edu.ecnu.Woodpecker.controller.TestController->main:551                          -------------Woodpecker开始运行-------------
+2022-03-03 13:24:21 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               构建CommandLine成功
+2022-03-03 13:24:21 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:24:21 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:25:04 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               构建CommandLine成功
+2022-03-03 13:25:04 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:27:45 [INFO ] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:43               开始执行CommandLine
+2022-03-03 13:27:45 [INFO ] edu.ecnu.Woodpecker.controller.TestController->exitWoodpecker:410                -------------stop Woodpecker-------------
+2022-03-03 13:28:23 [ERROR] edu.ecnu.Woodpecker.controller.WoodpeckerCommandLine->setOption:47               解析命令行参数失败, 原因: Unrecognized option: -HELP_DESC

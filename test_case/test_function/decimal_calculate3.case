@@ -1,0 +1,18 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c2 decimal(15,5), c3 decimal(38,0));";stat];
+SQL["insert into t1 values (1, 9999999999.99999, 99999999999999999999999999999999999991.99);";stat];
+SQL["insert into t1 values (2, 9999999999.99999, -99999999999999999999999999999999999991.99);";stat];
+ResultSet rs0 = SQL["select * from t1;"; stat];
+ResultSet rs1 = SQL["select c2+c3 from t1;"; stat];
+ResultSet rs2 = SQL["select -c2-c3 from t1;"; stat];
+
+IdealResultSet<int,Decimal,Decimal> irs0;
+IdealResultSet<Decimal> irs1;
+IdealResultSet<Decimal> irs2;
+
+IMPORT_IRS["decimal_calculate3";irs0 0,irs1 1,irs2 2];
+VERIFY[rs0;==;irs0];
+VERIFY[rs1;==;irs1];
+VERIFY[rs2;==;irs2];

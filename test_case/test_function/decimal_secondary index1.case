@@ -1,0 +1,11 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop table if exists t1;";stat];
+SQL["create table t1(k int primary key, c1 decimal(10,5), c2 decimal(5,1));";stat];
+SQL["create index c1_index on t1(c1);";stat];
+SQL["create index c1_c2_index on t1(c1, c2);";stat];
+SQL["insert into t1 values (1, 1234.4321, 2.3);";stat];
+SQL["insert into t1 values (2, 134.4321, 2.8);";stat];
+SQL["update t1 set c2 = 76.7 where c1 = 76.7;";stat];
+SQL["update t1 set c2 = 76.7 where c1 = 76.7 and c2 = 2.30;";stat];
+

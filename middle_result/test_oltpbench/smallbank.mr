@@ -1,0 +1,4 @@
+1,3:Connection conn=get_conn[master]
+2,3:Statement stmt=get_stat[conn]
+5,1:sql["create database if not exists smallbank";stmt]
+7,1:oltpbench[smallbank;config/sample_smallbank_config.xml;True;True;True;5;outputfile;2]

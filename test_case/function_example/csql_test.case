@@ -1,0 +1,14 @@
+Connection conn=GET_CONN[master];
+Statement stat=GET_STAT[conn];
+SQL["drop procedure if exists in_3"; stat];
+String create="create procedure in_3(in p_inout int) begin select p_inout;set p_inout=2;select p_inout; end";
+DEF_PROC[create;stat];
+
+CStatement cstat = GET_CSTAT[conn;"call in_3(?)";int];
+ResultSet rs0  = CSQL[cstat;1;3 in];
+int result = 3;
+IdealResultSet<int> irs0;
+IMPORT_IRS["csql_test";irs0 0];
+VERIFY[rs0;==;irs0];
+
+
