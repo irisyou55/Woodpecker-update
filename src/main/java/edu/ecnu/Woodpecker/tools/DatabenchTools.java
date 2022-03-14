@@ -32,7 +32,7 @@ public class DatabenchTools {
     private List<String> config;
 
     public DatabenchTools() {
-        this.configPath = "tools/databench/soft/application.properties";
+        this.configPath = "tools/databench-t/soft/application.properties";
         this.config = new ArrayList<>();
 
         if (TestController.getDatabase().getBrand().equalsIgnoreCase("mysql") || TestController.getDatabase().getBrand().equalsIgnoreCase("tidb")) {
@@ -74,18 +74,19 @@ public class DatabenchTools {
         String isolation_level = parts[3];
         Integer round = Integer.parseInt(parts[4]);
 
+        String path = System.getProperty("user.dir");
         String create_businessdb = "mysql -h" + this.IP + " -u" + this.user + " -p" + this.password
-                + " --execute=\"source /Users/irisyou/Woodpecker/tools/databench/sql/mysql/businesstest_database.sql;\"";
+                + " --execute=\"source " + path + "/tools/databench-t/sql/mysql/businesstest_database.sql;\"";
         WpLog.recordLog(LogLevelConstant.INFO, "开始导入businesstest_database.sql： " + create_businessdb);
         exec(create_businessdb);
 
         String create_localdb = "mysql -h" + this.IP + " -u" + this.user + " -p" + this.password
-                + " --execute=\"source /Users/irisyou/Woodpecker/tools/databench/sql/mysql/local_database.sql;\"";
+                + " --execute=\"source" + path + "/tools/databench-t/sql/mysql/local_database.sql;\"";
         WpLog.recordLog(LogLevelConstant.INFO, "开始导入local_database.sql： " + create_localdb);
         exec(create_localdb);
 
 
-        String init_data_cmd = "cd tools/databench/soft && java -Dfile.encoding=utf-8 -jar ftdb.jar init ";
+        String init_data_cmd = "cd tools/databench-t/soft && java -Dfile.encoding=utf-8 -jar ftdb.jar init ";
         init_data_cmd += datacfg_id + " --spring.config.location =" + this.configPath.substring(0, this.configPath.lastIndexOf(".")) + "-new.properties";
         ;
         WpLog.recordLog(LogLevelConstant.INFO, "导入数据： " + init_data_cmd);
@@ -93,11 +94,11 @@ public class DatabenchTools {
 
 
         for (int i = 0; i < round; i++) {
-            String cmd = "cd tools/databench/soft && java -Dfile.encoding=utf-8 -jar ftdb.jar test " + datacfg_id + " " +
+            String cmd = "cd tools/databench-t/soft && java -Dfile.encoding=utf-8 -jar ftdb.jar test " + datacfg_id + " " +
                     trancfg_id + " " + isolation_level.trim() + " --spring.config.location =" + this.configPath.substring(0, this.configPath.lastIndexOf(".")) + "-new.properties";
-            WpLog.recordLog(LogLevelConstant.INFO, "开始执行databench");
-            WpLog.recordLog(LogLevelConstant.INFO, "databench命令: " + cmd);
-            TestController.reportGenerator.appendNewBenchmark("DATABENCH 测试报告", "");
+            WpLog.recordLog(LogLevelConstant.INFO, "开始执行databench-t");
+            WpLog.recordLog(LogLevelConstant.INFO, "databench-t命令: " + cmd);
+            TestController.reportGenerator.appendNewBenchmark("DATABENCH-T 测试报告", "");
 
             String result = exec(cmd).toString();
 
